@@ -3,7 +3,7 @@ const movesCount = document.getElementById('moves');
 const timeDisplay = document.getElementById('time');
 const startButton = document.getElementById('start-button');
 const gameOverMessage = document.getElementById('game-over-message');
-const playAgainButton = document.getElementById('play-again');
+const playAgainButton = document.getElementById('play-again'); 
 
 const gridSize = 4; 
 const cardSize = 100;
@@ -14,9 +14,9 @@ let cardColors = [
 ];
 let flippedCards = [];
 let startTime;
-let moves = 0;
+let moves = 0; 
 
-function shuffleArray(array) {
+function shuffleArray(array) { 
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -101,7 +101,7 @@ function endGame() {
 
   // Clear the game board
   while (gameBoard.firstChild) {
-      gameBoard.removeChild(gameBoard.firstChild);
+    gameBoard.removeChild(gameBoard.firstChild);
   }
 }
 
@@ -109,5 +109,3 @@ startButton.addEventListener('click', startGame);
 playAgainButton.addEventListener('click', () => {
   location.reload(); // Reload the page to restart the game
 });
-
-// ... (Add logic to check for game completion and display the "Game Over" message)
