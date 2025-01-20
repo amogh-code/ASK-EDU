@@ -1,0 +1,8 @@
+title: AskEdu 
+description: Unlock Your Potential with AskEdu
+baseurl: "" # Adjust if your site is in a subdirectory
+
+# ... other configurations ...
+
+sass:
+  sass_dir: css
