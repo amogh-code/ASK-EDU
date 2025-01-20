@@ -1,0 +1,65 @@
+/* Paths Page CSS */
+
+.path-categories {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-gap: 2rem;
+}
+
+.category {
+  background-color: #292a2c;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative; /* For overlay effect */
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.category img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.category h3 {
+  color: #00d1b2;
+  margin-bottom: 0.5rem;
+}
+
+.category p {
+  color: #888; 
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.category:hover::before { 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.category:hover::before {
+  opacity: 0.8; 
+}
+
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr; 
+  }
+}
