@@ -8,7 +8,7 @@
 
 .game-board {
   display: grid;
-  grid-template-columns: repeat(4, 100px); /* Adjust grid size as needed */
+  grid-template-columns: repeat(4, 100px); 
   grid-gap: 10px; 
 }
 
@@ -47,5 +47,3 @@
   border-radius: 5px;
   cursor: pointer;
 }
-
-/* Add more specific styles as needed */
