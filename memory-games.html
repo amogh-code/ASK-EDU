@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AskEdu - Memory Games</title> 
+    <title>AskEdu - Memory Game</title>
     <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/memory-game.css"> 
 </head>
 <body>
 
@@ -26,19 +27,20 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Memory Games</h1>
-                <p>Engage in fun and interactive games to boost your memory and cognitive skills.</p>
+        <section class="game-container">
+            <h1>Memory Game</h1>
+            <p>Match the pairs of cards to win!</p>
+            <div id="game-board"></div>
+            <div class="game-info">
+                <p>Moves: <span id="moves">0</span></p>
+                <p>Time: <span id="time">0</span> seconds</p>
             </div>
-        </section>
-
-        <section class="game-container"> 
-            <h2>Play Now!</h2>
-            <div id="game-board"></div> 
-            <p id="moves">Moves: 0</p>
-            <p id="time">Time: 0s</p>
-            <button id="start-button">Start Game</button>
+            <div id="game-over-message" style="display: none;">
+                <h2>Congratulations! You Win!</h2>
+                <p>Moves: <span id="final-moves"></span></p>
+                <p>Time: <span id="final-time"></span> seconds</p>
+                <button id="play-again">Play Again</button>
+            </div>
         </section>
 
     </main>
@@ -52,6 +54,8 @@
             <li><a href="#">Privacy Policy</a></li>
         </ul>
     </footer>
+
+    <script src="js/memory-games.js"></script> 
 
 </body>
 </html>
