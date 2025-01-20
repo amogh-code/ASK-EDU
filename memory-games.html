@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AskEdu - Memory Game</title> 
+    <title>AskEdu - Memory Games</title> 
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
@@ -19,30 +19,28 @@
                 <li><a href="community.html">Community</a></li> 
                 <li><a href="paths.html">Paths</a></li> 
                 <li><a href="profile.html">Profile</a></li>
-                <li><a href="pricing.html">Pricing</li> 
+                <li><a href="pricing.html">Pricing</a></li> 
             </ul>
         </nav>
         <span class="production-credit">An Amogh Kris Production</span>
     </header>
 
     <main>
-        <section class="game-container">
-            <h1>Memory Game</h1>
-            <div id="game-board"></div>
-            <div id="game-info">
-                <p>Moves: <span id="moves">0</span></p>
-                <p>Time: <span id="time">0</span> seconds</p>
-            </div>
-            <div id="game-over-message" style="display: none;">
-                <h2>You Win!</h2>
-                <p>Moves: <span id="final-moves"></span></p>
-                <p>Time: <span id="final-time"></span> seconds</p>
-            </div>
-            <div id="high-scores">
-                <h2>High Scores</h2>
-                <ul id="high-score-list"></ul>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Memory Games</h1>
+                <p>Engage in fun and interactive games to boost your memory and cognitive skills.</p>
             </div>
         </section>
+
+        <section class="game-container"> 
+            <h2>Play Now!</h2>
+            <div id="game-board"></div> 
+            <p id="moves">Moves: 0</p>
+            <p id="time">Time: 0s</p>
+            <button id="start-button">Start Game</button>
+        </section>
+
     </main>
 
     <footer>
