@@ -3,6 +3,7 @@ description: Unlock Your Potential with AskEdu
 baseurl: "" # Adjust if your site is in a subdirectory
 
 # ... other configurations ...
+source: pages
 
 sass:
   sass_dir: css
