@@ -12,7 +12,7 @@
 }
 
 .category {
-  background-color: #292a2c; 
+  background-color: #292a2c; /* Match main page background color */
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
@@ -32,13 +32,15 @@
 }
 
 .category h3 {
-  color: #00d1b2; 
+  color: #00d1b2; /* Match main page accent color */
   margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif; /* Match main page font */
 }
 
 .category p {
-  color: #888; 
+  color: #888; /* Adjust color to match main page text color */
   font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif; /* Match main page font */
   margin-bottom: 1rem;
 }
 
@@ -63,14 +65,3 @@
     grid-template-columns: 1fr; 
   }
 }
-
-/* Match main page theme (adjust as needed) */
-body {
-  font-family: 'Montserrat', sans-serif; 
-}
-
-h2 {
-  color: #00d1b2; /* Accent color for headings */
-}
-
-/* Add any other styles from your main page CSS here */
