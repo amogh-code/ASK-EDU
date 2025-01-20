@@ -1,0 +1,161 @@
+/* General Styles */
+
+body {
+  background-color: #1f2022; /* Dark background */
+  color: #fff; /* White text */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: #fff; /* White links */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ccc; /* Light gray on hover */
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #333; /* Darker gray for buttons */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #222; /* Even darker gray on hover */
+}
+
+/* Header Styles */
+
+header {
+  background-color: #1f2022;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.accent {
+  color: #00d1b2; /* Kinnu-inspired accent color */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Hero Section Styles */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-image {
+  max-width: 50%;
+}
+
+/* Featured Paths Section Styles */
+
+.featured-paths {
+  padding: 5rem 0;
+}
+
+.path-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.path-card {
+  width: calc(33% - 20px); /* Adjust for spacing */
+  background-color: #292a2c; /* Slightly darker background for cards */
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.path-card:hover {
+  background-color: #222; /* Darker background on hover */
+}
+
+.path-card img {
+  margin-bottom: 10px;
+}
+
+/* How It Works Section Styles */
+
+.how-it-works {
+  padding: 5rem 0;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.step {
+  width: calc(25% - 20px); /* Adjust for spacing */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.step img {
+  margin-bottom: 10px;
+}
+
+/* Additional Sections (use similar styles with variations) */
+
+.benefits,
+.testimonials,
+.call-to-action {
+  padding: 5rem 0;
+}
+
+.testimonials .testimonial {
+  border-top: 1px solid #333
