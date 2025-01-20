@@ -1,14 +1,13 @@
-// Using plain JavaScript for a basic implementation
-// For more advanced graphics, consider Phaser or PixiJS
-
 const gameBoard = document.getElementById('game-board');
 const movesCount = document.getElementById('moves');
 const timeDisplay = document.getElementById('time');
 const startButton = document.getElementById('start-button');
+const gameOverMessage = document.getElementById('game-over-message');
+const playAgainButton = document.getElementById('play-again');
 
-let gridSize = 4; 
-let cardSize = 100;
-let cardSpacing = 10;
+const gridSize = 4; 
+const cardSize = 100;
+const cardSpacing = 10;
 let cardColors = [
   'red', 'blue', 'green', 'yellow', 'purple', 'orange', 
   'red', 'blue', 'green', 'yellow', 'purple', 'orange' 
@@ -90,17 +89,25 @@ function updateTime() {
   timeDisplay.textContent = elapsedTime.toFixed(1);
 }
 
-startButton.addEventListener('click', startGame); 
+function endGame() {
+  const finalMoves = moves;
+  const finalTime = timeDisplay.textContent;
 
-// Basic CSS for the game (you can customize this)
-const style = document.createElement('style');
-style.textContent = `
-  .card {
-    border-radius: 5px;
-    cursor: pointer;
+  gameOverMessage.style.display = 'block';
+  document.getElementById('final-moves').textContent = finalMoves;
+  document.getElementById('final-time').textContent = finalTime;
+  startButton.disabled = false; 
+  startButton.textContent = 'Play Again'; 
+
+  // Clear the game board
+  while (gameBoard.firstChild) {
+      gameBoard.removeChild(gameBoard.firstChild);
   }
-  .matched {
-    pointer-events: none; 
-  }
-`;
-document.head.appendChild(style);
+}
+
+startButton.addEventListener('click', startGame);
+playAgainButton.addEventListener('click', () => {
+  location.reload(); // Reload the page to restart the game
+});
+
+// ... (Add logic to check for game completion and display the "Game Over" message)
